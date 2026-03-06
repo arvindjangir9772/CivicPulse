@@ -143,10 +143,11 @@ Start the backend:
 cd frontend
 npm install
 npm run dev
-# Frontend starts on → http://localhost:5173
+# Frontend starts on → http://localhost:5174
 ```
 
-Open your browser at **http://localhost:5173**
+Open your browser at **http://localhost:5174**
+
 
 ---
 
