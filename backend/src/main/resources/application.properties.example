@@ -1,0 +1,23 @@
+server.port=8081
+
+# Database Configuration (MySQL)
+# Assuming a standard local installation (like XAMPP or Workbench)
+spring.datasource.url=jdbc:mysql://localhost:3306/civicpulse_v2_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+
+# H2 Console (Disabled since we use MySQL)
+spring.h2.console.enabled=false
+
+# JPA / Hibernate Configuration
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+# JWT Secret (generate a strong 256-bit hex key for production)
+jwt.secret=YOUR_JWT_SECRET_HERE
+jwt.expirationMs=86400000
+
+# Escalation Schedule (every 30 seconds for testing, adjust as needed)
+escalation.cron=*/30 * * * * *
+escalation.thresholdDays=3

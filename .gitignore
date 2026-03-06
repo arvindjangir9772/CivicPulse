@@ -1,0 +1,37 @@
+# ========================
+# OS & Editor
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# Frontend (Node/Vite)
+# ========================
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ========================
+# Backend (Java/Maven)
+# ========================
+backend/target/
+backend/*.log
+backend/backend.log
+backend/backend_out.log
+backend/.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.properties
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# ========================
+# Secrets / Env files
+# ========================
+*.env
+.env
+application-secret.properties
